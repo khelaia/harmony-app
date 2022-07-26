@@ -39,7 +39,7 @@ const EtherScanLink = ({ children, address, className }) => {
       data-testid="ether-scan-link-container"
       target="_blank"
       rel="noopener"
-      href={`https://harmonyscan.com/address/${address}`}
+      href={`https://explorer.harmony.one/address/${address}`}
       className={className}
     >
       {children}

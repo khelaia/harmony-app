@@ -384,7 +384,6 @@ const Editable = ({
       skip: keyName !== 'Expiration Date'
     }
   )
-  console.log(getRentPrice, 'get rent price')
   const isNewResolverAddress =
     keyName === 'Resolver' &&
     addressUtils.isAddress(newValue) &&

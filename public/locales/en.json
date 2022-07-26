@@ -1,6 +1,6 @@
 {
   "address": {
-    "etherscanButton": "View on harmonyscan",
+    "etherscanButton": "View on Harmony Explorer",
     "filter": {
       "controller": "Controller",
       "registrant": "Registrant"

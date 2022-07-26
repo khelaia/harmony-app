@@ -393,7 +393,6 @@ const resolvers = {
 
         const ens = getENS()
         const decrypted = isDecrypted(name)
-        console.log(ens, 'ens')
         let node = {
           name: null,
           revealDate: null,

@@ -202,7 +202,6 @@ function DetailsContainer({
 }) {
   const { t } = useTranslation()
   const isExpired = domain.expiryTime < new Date()
-  console.log(domain.available, 'is available')
   const domainOwner =
     domain.available || domain.owner === '0x0' ? null : domain.owner
   const registrant =

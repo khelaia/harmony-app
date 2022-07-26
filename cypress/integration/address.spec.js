@@ -29,7 +29,7 @@ describe('/address', () => {
     })
 
     cy.getByText('My Account').click({ force: true })
-    cy.queryByText('View on harmonyscan', {
+    cy.queryByText('View on Harmony Explorer', {
       exact: false,
       timeout: 10000
     }).should('exist')

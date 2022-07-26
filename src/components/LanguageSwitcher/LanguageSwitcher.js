@@ -67,7 +67,7 @@ const ActiveLanguage = styled('div')`
   display: flex;
   justify-content: center;
   height: 100%;
-  padding: 0 20px;
+  padding: 0 5px;
   align-items: center;
   span {
     margin-right: 10px;
@@ -81,8 +81,10 @@ const ActiveLanguage = styled('div')`
 const LanguageSwitcherContainer = styled('div')`
   background: white;
   position: relative;
-  margin-left: auto;
   border-radius: 8px;
+
+  margin-right: 15px;
+  margin-left: 10px;
 `
 
 const Dropdown = styled(motion.div)`

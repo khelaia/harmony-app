@@ -26,11 +26,17 @@ const SideNavContainer = styled('nav')`
   `}
 
   left: 0;
+  right: 0;
   height: auto;
-  background: #121d46;
-  width: 100%;
+  background: #1b7977;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   margin-top: -10px;
   ${mq.medium`
+    margin:0;
     padding: 0;
     left: 15px;
     padding-top: 50px;
