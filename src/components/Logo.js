@@ -30,7 +30,7 @@ const Logo = ({ color, className, to = '' }) => (
   <LogoContainer className={className} to={to}>
     {/*<IconLogo src={ENSLogo} />*/}
     {/*<LogoTyped color={color} />*/}
-    <img src="/logo.png" alt="" style={{ width: '50px' }} />
+    <img src="/logo.png" alt="" style={{ width: '80px' }} />
   </LogoContainer>
 )
 
