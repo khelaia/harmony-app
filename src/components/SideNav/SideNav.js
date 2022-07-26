@@ -200,21 +200,21 @@ function SideNav({ match, isMenuOpen, toggleMenu }) {
               <span>{t('c.faq')}</span>
             </NavLink>
           </li>
-          <li style={{ listStyle: 'none', display: 'flex' }}>
-            <ThirdPartyLink
-              href={'https://twitter.com/asedomains'}
-              target={'_blank'}
-            >
-              <TwitterIcon />
-            </ThirdPartyLink>
-            <ThirdPartyLink
-              href={'https://discord.gg/UYb7kumf3s'}
-              target={'_blank'}
-              style={{ marginLeft: '10px' }}
-            >
-              <DiscordIcon />
-            </ThirdPartyLink>
-          </li>
+          {/*<li style={{ listStyle: 'none', display: 'flex' }}>*/}
+          {/*  <ThirdPartyLink*/}
+          {/*    href={'https://twitter.com/asedomains'}*/}
+          {/*    target={'_blank'}*/}
+          {/*  >*/}
+          {/*    <TwitterIcon />*/}
+          {/*  </ThirdPartyLink>*/}
+          {/*  <ThirdPartyLink*/}
+          {/*    href={'https://discord.gg/UYb7kumf3s'}*/}
+          {/*    target={'_blank'}*/}
+          {/*    style={{ marginLeft: '10px' }}*/}
+          {/*  >*/}
+          {/*    <DiscordIcon />*/}
+          {/*  </ThirdPartyLink>*/}
+          {/*</li>*/}
           {/* <li>
           <ThirdPartyLink href={aboutPageURL()}>
             <Info />

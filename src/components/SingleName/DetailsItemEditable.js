@@ -374,7 +374,6 @@ const Editable = ({
     }
   )
   let ethUsdPrice = ethUsdPriceData?.getEthPrice
-
   const { data: { getRentPrice } = {}, loading: rentPriceLoading } = useQuery(
     GET_RENT_PRICE,
     {

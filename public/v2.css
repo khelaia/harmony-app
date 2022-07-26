@@ -16,11 +16,11 @@
   --dropdown-bg: #21242d;
   --dropdown-hover: #2a2e3c;
   --popup-bg: #161925;
-  --search-bg: #14162b;
+  --search-bg: #ffffff;
   --overlay-bg: rgba(36, 39, 59, 0.3);
   --scrollbar-bg: rgba(1, 2, 3, 0.4);
 }
-.light-mode {
+:light-mode {
   --theme-bg-color: rgba(255, 255, 255, 0.31);
   --theme-color: #3c3a3a;
   --inactive-color: #333333;
@@ -52,23 +52,31 @@ body {
   width: 100%;
   height: 100vh;
 }
-.video-bg {
-  background: linear-gradient(-45deg, #984be1, #8247e4, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  background-position: center;
+body {
+  background: linear-gradient(
+          -45deg,
+          #ee7752,
+          #e73c7e,
+          #23a6d5,
+          #23d5ab
+  ) !important;
+  background-size: 400% 400% !important;
+  animation: gradient 15s ease infinite !important;
+  height: 100vh !important;
 }
+
 @keyframes gradient {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 50% !important;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 100% 50% !important;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 0% 50% !important;
   }
 }
+
 @media screen and (max-width: 480px) {
   body {
     padding: 0.8em;
@@ -132,9 +140,9 @@ body.light-mode .video-bg:before {
   width: 100%;
   height: 100vh;
   background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.72) 0%,
-    rgba(255, 255, 255, 0.45) 100%
+          180deg,
+          rgba(255, 255, 255, 0.72) 0%,
+          rgba(255, 255, 255, 0.45) 100%
   );
   backdrop-filter: saturate(3);
 }
@@ -246,14 +254,22 @@ body.light-mode .video-bg:before {
   background-size: 14px;
   background-repeat: no-repeat;
   background-position: 16px 48%;
-  color: var(--theme-color);
+  color: #1d1d1d;
 }
 .search-bar input::placeholder {
   font-family: var(--body-font);
-  color: var(--inactive-color);
+  color: #1d1d1d;
   font-size: 15px;
   font-weight: 500;
 }
+
+.search-bar input::placeholder {
+  font-family: var(--body-font);
+  color: #1d1d1d;
+  font-size: 15px;
+  font-weight: 500;
+}
+
 .header-profile {
   display: flex;
   align-items: center;
@@ -421,21 +437,21 @@ body.light-mode .video-bg:before {
   width: 100%;
   justify-content: space-between;
   background-image: url('https://www.transparenttextures.com/patterns/cubes.png'),
-    linear-gradient(
-      to right top,
-      #cf4af3,
-      #e73bd7,
-      #f631bc,
-      #fd31a2,
-      #ff3a8b,
-      #ff4b78,
-      #ff5e68,
-      #ff705c,
-      #ff8c51,
-      #ffaa49,
-      #ffc848,
-      #ffe652
-    );
+  linear-gradient(
+          to right top,
+          #cf4af3,
+          #e73bd7,
+          #f631bc,
+          #fd31a2,
+          #ff3a8b,
+          #ff4b78,
+          #ff5e68,
+          #ff705c,
+          #ff8c51,
+          #ffaa49,
+          #ffc848,
+          #ffe652
+  );
   border-radius: 14px;
   padding: 20px 40px;
 }
@@ -625,7 +641,7 @@ body.light-mode .video-bg:before {
   background-color: var(--button-inactive);
   border-radius: 50%;
   box-shadow: 7px 0 0 0 var(--button-inactive),
-    14px 0 0 0 var(--button-inactive);
+  14px 0 0 0 var(--button-inactive);
   margin: 0 12px;
 }
 @media screen and (max-width: 415px) {

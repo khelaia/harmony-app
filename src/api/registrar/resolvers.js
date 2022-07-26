@@ -15,10 +15,9 @@ const resolvers = {
     },
     async getEthPrice(_, {}) {
       const registrar = getRegistrar()
-      return 0.5 //registrar.getEthPrice()
+      return registrar.getEthPrice()
     },
     async getRentPrice(_, { label, duration }) {
-      console.log('aba aq?')
       const registrar = getRegistrar()
       return registrar.getRentPrice(label, duration)
     },
