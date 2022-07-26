@@ -1,1 +1,1 @@
-export const rpcUrl = 'https://harmony-rpc.com/'
+export const rpcUrl = 'https://a.api.s0.t.hmny.io'
