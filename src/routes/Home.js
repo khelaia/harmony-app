@@ -22,17 +22,12 @@ import {
 } from '../components/Banner/DAOBanner'
 
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react'
 
 // Import Swiper styles
-import 'swiper/css'
-import 'swiper/css/free-mode'
-import 'swiper/css/pagination'
+
 
 import 'styles.css'
 
-// import required modules
-import { FreeMode, Pagination } from 'swiper'
 
 const HeroTop = styled('div')`
   display: grid;
@@ -159,7 +154,6 @@ const SearchContainer = styled('div')`
   display: flex;
   margin-bottom: auto;
   flex-direction: column;
-  min-width: 100%;
   ${mq.medium`
     min-width: 60%;
   `}
@@ -179,7 +173,6 @@ const SearchContainer = styled('div')`
 `
 
 const Search = styled(SearchDefault)`
-  min-width: 90%;
   ${mq.medium`
     min-width: 780px;
   `}
@@ -188,7 +181,7 @@ const Search = styled(SearchDefault)`
   }
   input {
     width: 100%;
-    border-radius: 0px;
+    border-radius: 6px;
     ${mq.medium`
       border-radius: 6px;
       font-size: 28px;
@@ -392,32 +385,7 @@ export default ({ match }) => {
           <div className="text-bottom-wrapper">Docs</div>
           <div className="text-bottom-wrapper">Roadmap</div>
           <div className="text-bottom-wrapper">Telegram</div>
-          {/* 
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={1}
-        freeMode={true}
-        navigation={true} 
-        pagination={{
-          clickable: true,
-        }}
-        breakpoints={{
 
-          728: {
-            slidesPerView: 4,
-            spaceBetween: 10,
-          },
-        }}
-        modules={[FreeMode, Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide> <img src="placeholder.png" /></SwiperSlide>
-
-        <SwiperSlide> <img src="placeholder.png" /></SwiperSlide>
-        <SwiperSlide> <img src="placeholder.png" /></SwiperSlide>
-        <SwiperSlide> <img src="placeholder.png" /></SwiperSlide>
-        <SwiperSlide> <img src="placeholder.png" /></SwiperSlide>
-      </Swiper> */}
         </div>
       </>
     </Hero>

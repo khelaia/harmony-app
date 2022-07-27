@@ -6,6 +6,7 @@ import { hasNonAscii } from '../../utils/utils'
 
 const MainContainer = styled('main')`
   margin-top: 0;
+  padding: 5px;
   width: 100%;
   overflow-y: scroll;
   ${p =>

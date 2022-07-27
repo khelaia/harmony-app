@@ -45,7 +45,6 @@ const SideNavContainer = styled('nav')`
     width: 220px;
     display: block;
   `}
-
   ul {
     padding: 0;
     margin: 0;
