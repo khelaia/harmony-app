@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import { useQuery } from '@apollo/client'
 import { Link } from 'react-router-dom'
 import styled from '@emotion/styled/macro'
@@ -20,6 +20,19 @@ import {
   MainPageBannerContainer,
   DAOBannerContent
 } from '../components/Banner/DAOBanner'
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+// Import Swiper styles
+import 'swiper/css'
+import 'swiper/css/free-mode'
+import 'swiper/css/pagination'
+
+import 'styles.css'
+
+// import required modules
+import { FreeMode, Pagination } from 'swiper'
 
 const HeroTop = styled('div')`
   display: grid;
@@ -131,7 +144,7 @@ const Hero = styled('section')`
   background-size: 100px 100px;
   padding: 60px 20px 20px;
   position: relative;
-  display: flex;
+  display: inline-grid;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -142,7 +155,9 @@ const Hero = styled('section')`
 
 const SearchContainer = styled('div')`
   margin: 0 auto 0;
+  margin-top: 7.5em;
   display: flex;
+  margin-bottom: auto;
   flex-direction: column;
   min-width: 100%;
   ${mq.medium`
@@ -250,6 +265,7 @@ const QuestionMark = styled(QuestionMarkDefault)`
 const LogoLarge = styled(motion.img)`
   // background:#0b64bb;
   width: 100%;
+  margin-top: 2em !important;
   margin: 0 auto 0;
   ${mq.medium`
     width: 323px;
@@ -358,12 +374,7 @@ export default ({ match }) => {
       </HeroTop>
       <SearchContainer>
         <>
-          <LogoLarge
-            initial={animation.initial}
-            animate={animation.animate}
-            src={'/main-logo.png'}
-            alt="ENS logo"
-          />
+          <LogoLarge src={'/main-logo.png'} alt="ENS logo" />
           <PermanentRegistrarLogo
             initial={animation.initial}
             animate={animation.animate}
@@ -371,6 +382,44 @@ export default ({ match }) => {
           <Search />
         </>
       </SearchContainer>
+      <>
+        <div className="bottom-section-wrapper">
+          <div className="text-bottom-wrapper">Twitter </div>
+
+          <div className="text-bottom-wrapper">Discord</div>
+
+          <div className="text-bottom-wrapper">Github</div>
+          <div className="text-bottom-wrapper">Docs</div>
+          <div className="text-bottom-wrapper">Roadmap</div>
+          <div className="text-bottom-wrapper">Telegram</div>
+          {/* 
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={1}
+        freeMode={true}
+        navigation={true} 
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+
+          728: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+          },
+        }}
+        modules={[FreeMode, Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide> <img src="placeholder.png" /></SwiperSlide>
+
+        <SwiperSlide> <img src="placeholder.png" /></SwiperSlide>
+        <SwiperSlide> <img src="placeholder.png" /></SwiperSlide>
+        <SwiperSlide> <img src="placeholder.png" /></SwiperSlide>
+        <SwiperSlide> <img src="placeholder.png" /></SwiperSlide>
+      </Swiper> */}
+        </div>
+      </>
     </Hero>
   )
 }

@@ -54,11 +54,11 @@ body {
 }
 body {
   background: linear-gradient(
-          -45deg,
-          #ee7752,
-          #e73c7e,
-          #23a6d5,
-          #23d5ab
+    -45deg,
+    #ee7752,
+    #e73c7e,
+    #23a6d5,
+    #23d5ab
   ) !important;
   background-size: 400% 400% !important;
   animation: gradient 15s ease infinite !important;
@@ -140,9 +140,9 @@ body.light-mode .video-bg:before {
   width: 100%;
   height: 100vh;
   background: linear-gradient(
-          180deg,
-          rgba(255, 255, 255, 0.72) 0%,
-          rgba(255, 255, 255, 0.45) 100%
+    180deg,
+    rgba(255, 255, 255, 0.72) 0%,
+    rgba(255, 255, 255, 0.45) 100%
   );
   backdrop-filter: saturate(3);
 }
@@ -231,7 +231,7 @@ body.light-mode .video-bg:before {
   }
 }
 .search-bar {
-  height: 40px;
+  height: 50px;
   display: flex;
   width: 100%;
   max-width: 550px;
@@ -437,21 +437,21 @@ body.light-mode .video-bg:before {
   width: 100%;
   justify-content: space-between;
   background-image: url('https://www.transparenttextures.com/patterns/cubes.png'),
-  linear-gradient(
-          to right top,
-          #cf4af3,
-          #e73bd7,
-          #f631bc,
-          #fd31a2,
-          #ff3a8b,
-          #ff4b78,
-          #ff5e68,
-          #ff705c,
-          #ff8c51,
-          #ffaa49,
-          #ffc848,
-          #ffe652
-  );
+    linear-gradient(
+      to right top,
+      #cf4af3,
+      #e73bd7,
+      #f631bc,
+      #fd31a2,
+      #ff3a8b,
+      #ff4b78,
+      #ff5e68,
+      #ff705c,
+      #ff8c51,
+      #ffaa49,
+      #ffc848,
+      #ffe652
+    );
   border-radius: 14px;
   padding: 20px 40px;
 }
@@ -641,7 +641,7 @@ body.light-mode .video-bg:before {
   background-color: var(--button-inactive);
   border-radius: 50%;
   box-shadow: 7px 0 0 0 var(--button-inactive),
-  14px 0 0 0 var(--button-inactive);
+    14px 0 0 0 var(--button-inactive);
   margin: 0 12px;
 }
 @media screen and (max-width: 415px) {
@@ -864,4 +864,39 @@ body.light-mode .video-bg:before {
 ::-webkit-scrollbar-thumb {
   background: var(--scrollbar-bg);
   border-radius: 10px;
+}
+
+.bottom-section-wrapper {
+  display: flex;
+  margin: auto;
+  margin-left: 5em;
+  /* grid-template-columns: 1fr 7fr; */
+}
+.text-bottom-wrapper {
+  margin: auto;
+  font-size: 2em;
+  margin-right: 1.5em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.text-bottom-wrapper::before {
+  content: '';
+  background: #00ade8;
+  width: 115px;
+  height: 25px;
+  display: block;
+  margin-bottom: -38px;
+  -webkit-transition: 0.33s all;
+  -o-transition: 0.33s all;
+  transition: 0.33s all;
+  -webkit-appearance: none;
+}
+
+.text-bottom-wrapper:hover::before {
+  width: 0px;
+  -webkit-transition: 0.33s all;
+  -o-transition: 0.33s all;
+  transition: 0.33s all;
+  -webkit-appearance: none;
 }

@@ -1,0 +1,89 @@
+/* #app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+} */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .bottom-section-wrapper {
+    display: initial;
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  .swiper {
+    margin-bottom: 3em;
+    width: 100% !important;
+    height: 100%;
+  }
+}
+
+.swiper {
+  margin-bottom: 3em;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  border-radius: 4px;
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  height: max-content;
+  margin: auto;
+  margin-bottom: 50px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  filter: grayscale(1);
+  cursor: pointer;
+  display: block;
+  width: 100vw;
+  border-radius: 4px;
+  max-height: 290px;
+  object-fit: cover;
+}
+
+.swiper-slide img:hover {
+  filter: grayscale(0);
+  transition: 1s;
+}
+
+.center {
+  text-align: center;
+}
+.news {
+  font-size: 2em;
+}
+.socials {
+  display: inline-block;
+  justify-content: space-evenly;
+}
