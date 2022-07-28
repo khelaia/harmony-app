@@ -90,10 +90,10 @@ const NavLink = styled(Link)`
     color: ${p => (p.active ? '#00ADE7' : 'var(--theme-color)')};
   }
   path {
-    fill: var(--theme-color);
+    fill: ${p => (p.active ? '#00ADE7' : 'var(--theme-color)')};
   }
   g {
-    fill: var(--theme-color);
+    fill: ${p => (p.active ? '#00ADE7' : 'var(--theme-color)')};
   }
   &:hover {
     span {
@@ -133,10 +133,10 @@ const ThirdPartyLink = styled('a')`
     color: ${p => (p.active ? '#00ADE7' : 'var(--theme-color)')};
   }
   path {
-    fill: var(--theme-color);
+    fill: ${p => (p.active ? '#00ADE7' : 'var(--theme-color)')};
   }
   g {
-    fill: var(--theme-color);
+    fill: ${p => (p.active ? '#00ADE7' : 'var(--theme-color)')};
   }
   &:hover {
     span {

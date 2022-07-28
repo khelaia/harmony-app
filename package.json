@@ -66,6 +66,7 @@
     "stream-http": "^3.2.0",
     "swiper": "^8.3.2",
     "traverse": "^0.6.6",
+    "typewriter-effect": "^2.19.0",
     "walletlink": "2.5.0"
   },
   "scripts": {

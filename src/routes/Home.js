@@ -8,7 +8,6 @@ import mq from 'mediaQuery'
 
 import SearchDefault from '../components/SearchName/Search'
 import NoAccountsDefault from '../components/NoAccounts/NoAccountsModal'
-import bg from '../assets/heroBG.jpg'
 import TextBubbleDefault from '../components/Icons/TextBubble'
 import QuestionMarkDefault from '../components/Icons/QuestionMark'
 import HowToUseDefault from '../components/HowToUse/HowToUse'
@@ -16,10 +15,8 @@ import ENSLogo from '../components/HomePage/images/ENSLogo.svg'
 import { aboutPageURL } from '../utils/utils'
 import { connectProvider, disconnectProvider } from '../utils/providerUtils'
 import { gql } from '@apollo/client'
-import {
-  MainPageBannerContainer,
-  DAOBannerContent
-} from '../components/Banner/DAOBanner'
+import Typewriter from 'typewriter-effect';
+
 
 // Import Swiper React components
 
@@ -374,6 +371,26 @@ export default ({ match }) => {
           <Search />
         </>
       </SearchContainer>
+      <>
+        <div className={"typewriter"}>
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter.typeString("Decentralized naming for <span class=\'with__bg\'>web3!</span>")
+                .pauseFor(1500)
+                .deleteChars(5)
+                .typeString("<span class='with__bg'>username!</span>")
+                .pauseFor(1500)
+                .deleteChars(9)
+                .typeString("<span class='with__bg'>website!</span>")
+                .pauseFor(1500)
+                .deleteChars(8)
+                .typeString("<span class='with__bg'>wallet!</span>")
+                .start();
+            }}
+          />
+        </div>
+      </>
+
       <>
         <div className="bottom-section-wrapper">
           <div className="text-bottom-wrapper">Twitter </div>
