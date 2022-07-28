@@ -25,9 +25,7 @@ import {
 
 // Import Swiper styles
 
-
 import 'styles.css'
-
 
 const HeroTop = styled('div')`
   display: grid;
@@ -110,9 +108,9 @@ const Announcement = styled('div')`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: #5284ff;
+  background: #00ade7;
   padding: 0 10px;
-  border-bottom: #5284ff solid 3px;
+  border-bottom: #00ade7 solid 3px;
   h3 {
     color: white;
     font-weight: 400;
@@ -150,7 +148,7 @@ const Hero = styled('section')`
 
 const SearchContainer = styled('div')`
   margin: 0 auto 0;
-  margin-top: 7.5em;
+  margin-top: 1em;
   display: flex;
   margin-bottom: auto;
   flex-direction: column;
@@ -258,6 +256,7 @@ const QuestionMark = styled(QuestionMarkDefault)`
 const LogoLarge = styled(motion.img)`
   // background:#0b64bb;
   width: 100%;
+  margin-bottom: 4em !important;
   margin-top: 2em !important;
   margin: 0 auto 0;
   ${mq.medium`
@@ -385,7 +384,6 @@ export default ({ match }) => {
           <div className="text-bottom-wrapper">Docs</div>
           <div className="text-bottom-wrapper">Roadmap</div>
           <div className="text-bottom-wrapper">Telegram</div>
-
         </div>
       </>
     </Hero>

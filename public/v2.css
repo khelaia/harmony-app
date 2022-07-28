@@ -234,8 +234,8 @@ body.light-mode .video-bg:before {
   height: 50px;
   display: flex;
   width: 100%;
-  max-width: 550px;
-  padding-left: 16px;
+  max-width: 95%;
+  padding-left: 0px;
   border-radius: 4px;
   margin: 0 auto;
 }

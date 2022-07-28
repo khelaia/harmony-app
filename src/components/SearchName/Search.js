@@ -50,7 +50,7 @@ const SearchForm = styled('form')`
   }
 
   button {
-    ${p => (p && p.hasSearch ? 'background: #5284ff;' : 'background: #c7d3e3;')}
+    ${p => (p && p.hasSearch ? 'background: #00ADE7;' : 'background: #c7d3e3;')}
     color: white;
     font-size: 22px;
     font-family: Overpass;
@@ -132,7 +132,7 @@ function Search({ history, className, style }) {
           autoCapitalize="off"
         />
       </div>
-      <LanguageSwitcher />
+      {/* <LanguageSwitcher /> */}
       {/*<button*/}
       {/*  disabled={!hasSearch}*/}
       {/*  type="submit"*/}
