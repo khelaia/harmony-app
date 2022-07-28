@@ -15,8 +15,7 @@ import ENSLogo from '../components/HomePage/images/ENSLogo.svg'
 import { aboutPageURL } from '../utils/utils'
 import { connectProvider, disconnectProvider } from '../utils/providerUtils'
 import { gql } from '@apollo/client'
-import Typewriter from 'typewriter-effect';
-
+import Typewriter from 'typewriter-effect'
 
 // Import Swiper React components
 
@@ -182,6 +181,7 @@ const Search = styled(SearchDefault)`
       font-size: 28px;
     `}
   }
+  margin-bottom: 3em !important;
 
   button {
     border-radius: 0 6px 6px 0;
@@ -340,7 +340,11 @@ export default ({ match }) => {
             />
           )}
         </NetworkStatus>
+
         <Nav>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/favourites">{t('c.favourites')}</NavLink>
+          <NavLink to="/about">{t('c.about')}</NavLink>
           {accounts?.length > 0 && !isReadOnly && (
             <NavLink
               active={url === '/address/' + accounts[0]}
@@ -349,7 +353,6 @@ export default ({ match }) => {
               {t('c.mynames')}
             </NavLink>
           )}
-          <NavLink to="/favourites">{t('c.favourites')}</NavLink>
           {/*<ExternalLink href={'/ROADMAP.pdf'} target={'_blank'}>*/}
           {/*  Roadmap*/}
           {/*</ExternalLink>*/}
@@ -370,26 +373,44 @@ export default ({ match }) => {
           />
           <Search />
         </>
-      </SearchContainer>
-      <>
-        <div className={"typewriter"}>
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter.typeString("Decentralized naming for <span class=\'with__bg\'>web3!</span>")
+
+        <>
+          <div className={'typewriter'}>
+            Decentralized Naming For &nbsp;
+            <Typewriter
+              options={{
+                strings: ['WEB3!', 'USERNAMES!', 'WALLETS!', 'YOU!'],
+                autoStart: true,
+                loop: true
+              }}
+            />
+            {/* <Typewriter
+            options={{
+              strings: ['web3', 'usernames'],
+              loop: true,
+              delay:1500,
+              autoStart: true,
+
+            }}
+              onInit={(typewriter) => {
+              typewriter.typeString("web3!")
                 .pauseFor(1500)
                 .deleteChars(5)
-                .typeString("<span class='with__bg'>username!</span>")
+                .typeString("usernames!")
+                .pauseFor(1500)
+                .deleteChars(10)
+                .typeString("websites!")
                 .pauseFor(1500)
                 .deleteChars(9)
-                .typeString("<span class='with__bg'>website!</span>")
-                .pauseFor(1500)
+                .typeString("wallets!")
                 .deleteChars(8)
-                .typeString("<span class='with__bg'>wallet!</span>")
+                .typeString("you!")
                 .start();
             }}
-          />
-        </div>
-      </>
+          /> */}
+          </div>
+        </>
+      </SearchContainer>
 
       <>
         <div className="bottom-section-wrapper">

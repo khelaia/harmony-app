@@ -28,7 +28,7 @@ const SideNavContainer = styled('nav')`
   left: 0;
   right: 0;
   height: auto;
-  background: #1b7977;
+  background: #00ade8;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
