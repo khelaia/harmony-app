@@ -251,9 +251,9 @@ function Favourites() {
   const canRenew = favouritesList.filter(f => f.expiryDate).length > 0
   return (
     <FavouritesContainer data-testid="favourites-container">
-      <NonMainPageBannerContainer>
-        <DAOBannerContent />
-      </NonMainPageBannerContainer>
+      {/*<NonMainPageBannerContainer>*/}
+      {/*  <DAOBannerContent />*/}
+      {/*</NonMainPageBannerContainer>*/}
       <H2>{t('favourites.favouriteTitle')}</H2>
       {canRenew && (
         <>
