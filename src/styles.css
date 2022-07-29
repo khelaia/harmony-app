@@ -1,9 +1,9 @@
 @media screen and (max-width: 945px) {
   .typewriter {
-    display: block !important;
+    font-size: 15px !important;
   }
   .bottom-section-wrapper {
-    margin-bottom: 2em !important;
+    margin-bottom: 5em !important;
   }
 }
 .typewriter {

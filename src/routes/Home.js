@@ -273,6 +273,9 @@ const PermanentRegistrarLogo = styled(motion.h1)`
   letter-spacing: 1.8px;
   text-align: right;
   line-height: 24px;
+  @media (max-width: 767px) {
+    display: none;
+  }
   margin-top: 10px;
   margin-bottom: 50px;
   text-align: center;
