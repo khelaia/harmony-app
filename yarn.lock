@@ -2667,10 +2667,10 @@
     ethers "^5.6.2"
     js-sha3 "^0.8.0"
 
-"@khelaia/hns-ui@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@khelaia/hns-ui/-/hns-ui-1.0.3.tgz#765c8a8452a7e31d1407c55a86f86725d94628f6"
-  integrity sha512-Xnm9sAxsXVCV7SeHefupXf0WK0bVoEBaE6bnd+onF9rT84WI0V2wGsdRBGD28KK0EvP27/X2/2dvRc19tzSsSw==
+"@khelaia/hns-ui@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@khelaia/hns-ui/-/hns-ui-1.0.4.tgz#78e34b00502d093aa174cef0dcac00043349663a"
+  integrity sha512-wVSjSfvHrvZO5/dmrZiXuyh9mAM1hITf85SkrwIohjOx3tdLJ5NBKKx22shoJI1XzuSvHHMQj9utGIGUs4g9FQ==
   dependencies:
     "@0xproject/utils" "^2.0.2"
     "@babel/runtime" "^7.4.4"

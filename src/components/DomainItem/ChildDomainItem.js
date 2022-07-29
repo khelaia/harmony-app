@@ -234,19 +234,20 @@ export default function ChildDomainItem({
               </Tooltip>
             )}
             {checkedBoxes && isDecrypted && (
-              <Checkbox
-                testid={`checkbox-${name}`}
-                checked={checkedBoxes[name]}
-                onClick={e => {
-                  e.preventDefault()
-                  setCheckedBoxes(prevState => {
-                    return { ...prevState, [name]: !prevState[name] }
-                  })
-                  if (checkedBoxes[name]) {
-                    setSelectAll(false)
-                  }
-                }}
-              />
+              <></>
+              // <Checkbox
+              //   testid={`checkbox-${name}`}
+              //   checked={checkedBoxes[name]}
+              //   onClick={e => {
+              //     e.preventDefault()
+              //     setCheckedBoxes(prevState => {
+              //       return { ...prevState, [name]: !prevState[name] }
+              //     })
+              //     if (checkedBoxes[name]) {
+              //       setSelectAll(false)
+              //     }
+              //   }}
+              // />
             )}
           </DomainLink>
         </React.Fragment>

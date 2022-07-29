@@ -144,44 +144,44 @@ export default function Renew({
 
   return (
     <>
-      <ActionsContainer>
-        {!editing ? (
-          pending && !confirmed ? (
-            <PendingTx
-              txHash={txHash}
-              onConfirmed={() => {
-                setConfirmed()
-                refetchTilUpdated(
-                  refetch,
-                  300,
-                  'expiryDate',
-                  selectedNames[0],
-                  data,
-                  getterString
-                )
-                setCheckedBoxes({})
-                setSelectAll(false)
-              }}
-            />
-          ) : (
-            <>
-              {address && allNames.length > 0 ? (
-                <ExpiryNotifyDropdown address={address} />
-              ) : (
-                ''
-              )}
-              <RenewSelected
-                onClick={() => {
-                  if (labelsToRenew.length > 0) startEditing()
-                }}
-                type={labelsToRenew.length > 0 ? 'primary' : 'disabled'}
-              >
-                {t('address.renew.button')}
-              </RenewSelected>
-            </>
-          )
-        ) : null}
-      </ActionsContainer>
+      {/*<ActionsContainer>*/}
+      {/*  {!editing ? (*/}
+      {/*    pending && !confirmed ? (*/}
+      {/*      <PendingTx*/}
+      {/*        txHash={txHash}*/}
+      {/*        onConfirmed={() => {*/}
+      {/*          setConfirmed()*/}
+      {/*          refetchTilUpdated(*/}
+      {/*            refetch,*/}
+      {/*            300,*/}
+      {/*            'expiryDate',*/}
+      {/*            selectedNames[0],*/}
+      {/*            data,*/}
+      {/*            getterString*/}
+      {/*          )*/}
+      {/*          setCheckedBoxes({})*/}
+      {/*          setSelectAll(false)*/}
+      {/*        }}*/}
+      {/*      />*/}
+      {/*    ) : (*/}
+      {/*      <>*/}
+      {/*        {address && allNames.length > 0 ? (*/}
+      {/*          <ExpiryNotifyDropdown address={address} />*/}
+      {/*        ) : (*/}
+      {/*          ''*/}
+      {/*        )}*/}
+      {/*        <RenewSelected*/}
+      {/*          onClick={() => {*/}
+      {/*            if (labelsToRenew.length > 0) startEditing()*/}
+      {/*          }}*/}
+      {/*          type={labelsToRenew.length > 0 ? 'primary' : 'disabled'}*/}
+      {/*        >*/}
+      {/*          {t('address.renew.button')}*/}
+      {/*        </RenewSelected>*/}
+      {/*      </>*/}
+      {/*    )*/}
+      {/*  ) : null}*/}
+      {/*</ActionsContainer>*/}
 
       <RenewContainer>
         {editing && (

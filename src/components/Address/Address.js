@@ -384,21 +384,21 @@ export default function Address({
 
           {domainType === 'registrant' && (
             <>
-              <SelectAll>
-                <Checkbox
-                  testid="checkbox-renewall"
-                  type="double"
-                  checked={selectAll}
-                  onClick={() => {
-                    if (!selectAll) {
-                      selectAllNames()
-                    } else {
-                      setCheckedBoxes({})
-                    }
-                    setSelectAll(selectAll => !selectAll)
-                  }}
-                />
-              </SelectAll>
+              {/*<SelectAll>*/}
+              {/*  <Checkbox*/}
+              {/*    testid="checkbox-renewall"*/}
+              {/*    type="double"*/}
+              {/*    checked={selectAll}*/}
+              {/*    onClick={() => {*/}
+              {/*      if (!selectAll) {*/}
+              {/*        selectAllNames()*/}
+              {/*      } else {*/}
+              {/*        setCheckedBoxes({})*/}
+              {/*      }*/}
+              {/*      setSelectAll(selectAll => !selectAll)*/}
+              {/*    }}*/}
+              {/*  />*/}
+              {/*</SelectAll>*/}
             </>
           )}
         </Controls>
