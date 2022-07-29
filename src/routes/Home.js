@@ -181,7 +181,7 @@ const Search = styled(SearchDefault)`
       font-size: 28px;
     `}
   }
-  margin-bottom: 3em !important;
+  margin-bottom: 4em !important;
 
   button {
     border-radius: 0 6px 6px 0;
