@@ -1,13 +1,13 @@
 @media screen and (max-width: 945px) {
   .typewriter {
-    display: block !important;
+    font-size: 15px !important;
   }
   .bottom-section-wrapper {
-    margin-bottom: 2em !important;
+    margin-bottom: 5em !important;
   }
 }
 .typewriter {
-  font-size: 25px;
+  font-size: 20px;
   margin: 0 auto;
   color: white;
   display: inline-flex;
@@ -21,26 +21,25 @@
 .bottom-section-wrapper {
   display: flex;
   margin: auto;
-  margin-left: 2.2em;
+  margin-left: 1.6em;
   /* grid-template-columns: 1fr 7fr; */
 }
 .text-bottom-wrapper {
-  margin: auto;
-  font-size: 1.8em;
-  cursor: pointer;
-  width: 3.9em;
-  margin-right: 1.5em;
-  font-weight: 600;
   color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  margin: auto 2.5em auto auto;
+  width: 3.9em;
 }
 
 .text-bottom-wrapper::before {
   content: '';
   background: #00ade8;
-  width: 115px;
-  height: 25px;
+  width: 95px;
+  height: 15px;
   display: block;
-  margin-bottom: -38px;
+  margin-bottom: -25px;
   -webkit-transition: 0.33s all;
   -o-transition: 0.33s all;
   transition: 0.33s all;

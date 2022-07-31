@@ -181,7 +181,7 @@ const Search = styled(SearchDefault)`
       font-size: 28px;
     `}
   }
-  margin-bottom: 3em !important;
+  margin-bottom: 4em !important;
 
   button {
     border-radius: 0 6px 6px 0;
@@ -273,6 +273,9 @@ const PermanentRegistrarLogo = styled(motion.h1)`
   letter-spacing: 1.8px;
   text-align: right;
   line-height: 24px;
+  @media (max-width: 767px) {
+    display: none;
+  }
   margin-top: 10px;
   margin-bottom: 50px;
   text-align: center;
