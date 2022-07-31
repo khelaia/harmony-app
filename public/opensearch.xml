@@ -9,5 +9,5 @@
   <ShortName>HNS</ShortName>
   <Url type="text/html" rel="results" method="GET" template="https://hnsdomains.one/search/{searchTerms}"/>
   <Url type="application/opensearchdescription+xml" rel="self" method="GET" template="https://hnsdomains.one/opensearch.xml"/>
-  <moz:SearchForm>https://app.ens.domains/search</moz:SearchForm>
+  <moz:SearchForm>https://hnsdomains.one/search</moz:SearchForm>
 </OpenSearchDescription>

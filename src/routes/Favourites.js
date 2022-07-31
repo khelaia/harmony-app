@@ -119,7 +119,7 @@ export const useResetState = (setYears, setCheckedBoxes, setSelectAll) => {
 function Favourites() {
   const { t } = useTranslation()
   useEffect(() => {
-    document.title = 'ENS Favourites'
+    document.title = 'HNS Favourites'
   }, [])
 
   let [years, setYears] = useState(1)
@@ -133,7 +133,7 @@ function Favourites() {
     GET_FAVOURITES
   )
   useEffect(() => {
-    document.title = 'ENS Favourites'
+    document.title = 'HNS Favourites'
   }, [])
 
   const { data: { subDomainFavourites } = [] } = useQuery(
