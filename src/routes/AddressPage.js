@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Address from '../components/Address'
 
 const stripTrailingSlash = str => {
@@ -6,6 +6,9 @@ const stripTrailingSlash = str => {
 }
 
 const AddressContainer = ({ match, location }) => {
+  useEffect(() => {
+    document.title = 'HNS Accounts'
+  }, [])
   const address = match.params.address.toLowerCase()
   const domainType = match.params.domainType?.toLowerCase()
   const queryParams = new URLSearchParams(location.search)

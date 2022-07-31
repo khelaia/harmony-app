@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect } from 'react'
 import { useQuery } from '@apollo/client'
 import { Link } from 'react-router-dom'
 import styled from '@emotion/styled/macro'
@@ -313,6 +313,9 @@ const animation = {
 }
 
 export default ({ match }) => {
+  useEffect(() => {
+    document.title = 'Harmony Name Service'
+  }, [])
   const { url } = match
   const { t } = useTranslation()
 

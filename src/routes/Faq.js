@@ -63,7 +63,7 @@ const Section = ({ question, children }) => {
 function Faq() {
   const { t } = useTranslation()
   useEffect(() => {
-    document.title = 'ENS Faq'
+    document.title = 'HNS Faq'
   }, [])
 
   return (
@@ -74,7 +74,7 @@ function Faq() {
       <FaqContainer>
         <Title>FAQ</Title>
         <H2>Before You register</H2>
-        <Section question="Is ENS only for storing an harmony address?">
+        <Section question="Is HNS only for storing an harmony address?">
           No, you can store the addresses of over 100 blockchains, a content
           hash of a decentralized website, profile information such as an avatar
           and Twitter handle, and more.
@@ -178,20 +178,20 @@ function Faq() {
 
         <Section question="What is a Resolver?">
           A Resolver is a smart contract that holds records. Names are set by
-          default to the Public Resolver managed by the ENS team and has all the
-          standard ENS record types. You can set your Resolver to a custom
+          default to the Public Resolver managed by the HNS team and has all the
+          standard HNS record types. You can set your Resolver to a custom
           resolver contract if you,d like.
         </Section>
 
-        <Section question="What is a Primary ENS Name record?">
-          A Primary ENS Name record (formerly Reverse Record) makes your harmony
-          address point to an ENS name. This allows dapps to find and display
-          your ENS name when you connect to them with your harmony account. This
+        <Section question="What is a Primary HNS Name record?">
+          A Primary HNS Name record (formerly Reverse Record) makes your harmony
+          address point to an HNS name. This allows dapps to find and display
+          your HNS name when you connect to them with your harmony account. This
           can only be set by you so it is not set automatically upon
           registration.
           <br />
-          To set the Primary ENS Name record, please click "My account", and
-          select "Primary ENS Name".
+          To set the Primary HNS Name record, please click "My account", and
+          select "Primary HNS Name".
         </Section>
 
         <Section question="How do I unregister my name?">
@@ -245,7 +245,7 @@ function Faq() {
         </Section>
 
         <Section question="I lost access to the harmony account that owns a name I registered. Can I still extend its registration period?">
-          Any harmony account can pay to extend the registration of any ENS
+          Any harmony account can pay to extend the registration of any HNS
           name, though doing so from an account that's not the owner will not
           change ownership of the name. Just go to the name's page and click
           "Extend".
