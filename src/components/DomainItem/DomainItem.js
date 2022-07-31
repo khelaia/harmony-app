@@ -251,23 +251,23 @@ const Domain = ({
         <RightContainer>
           {expiryDate && (
             <CheckBoxContainer>
-              <Checkbox
-                testid={`checkbox-${domain.name}`}
-                checked={checkedBoxes[domain.name]}
-                onClick={e => {
-                  e.preventDefault()
-                  setCheckedBoxes &&
-                    setCheckedBoxes(prevState => {
-                      return {
-                        ...prevState,
-                        [domain.name]: !prevState[domain.name]
-                      }
-                    })
-                  if (checkedBoxes[domain.name]) {
-                    setSelectAll(false)
-                  }
-                }}
-              />
+              {/*<Checkbox*/}
+              {/*  testid={`checkbox-${domain.name}`}*/}
+              {/*  checked={checkedBoxes[domain.name]}*/}
+              {/*  onClick={e => {*/}
+              {/*    e.preventDefault()*/}
+              {/*    setCheckedBoxes &&*/}
+              {/*      setCheckedBoxes(prevState => {*/}
+              {/*        return {*/}
+              {/*          ...prevState,*/}
+              {/*          [domain.name]: !prevState[domain.name]*/}
+              {/*        }*/}
+              {/*      })*/}
+              {/*    if (checkedBoxes[domain.name]) {*/}
+              {/*      setSelectAll(false)*/}
+              {/*    }*/}
+              {/*  }}*/}
+              {/*/>*/}
             </CheckBoxContainer>
           )}
         </RightContainer>

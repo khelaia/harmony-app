@@ -270,19 +270,7 @@ function Favourites() {
             checkedOtherOwner={checkedOtherOwner}
           />
           <SelectAll>
-            <Checkbox
-              testid="checkbox-renewall"
-              type="double"
-              checked={selectAll}
-              onClick={() => {
-                if (!selectAll) {
-                  selectAllNames()
-                } else {
-                  setCheckedBoxes({})
-                }
-                setSelectAll(selectAll => !selectAll)
-              }}
-            />
+
           </SelectAll>
         </>
       )}

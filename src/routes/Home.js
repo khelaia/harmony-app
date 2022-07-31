@@ -137,6 +137,7 @@ const Hero = styled('section')`
   justify-content: center;
   align-items: center;
   height: 100vh;
+  min-height: 570px;
   ${mq.medium`
     padding: 0 20px 0;
   `}
