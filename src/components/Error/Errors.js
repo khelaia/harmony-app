@@ -36,7 +36,7 @@ export const NetworkError = ({ message }) => (
       <Warning src={warningImage} />
       <H2>{message}</H2>
       <br />
-      Please change your dapp browser to harmony
+      Please change your dapp browser to Harmony Mainnet Shard 0
     </Message>
   </ErrorContainer>
 )

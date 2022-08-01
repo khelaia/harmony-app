@@ -108,9 +108,9 @@ function Faq() {
         <Section question="How much does it cost to register a .one name?">
           Currently, registration costs are set at the following prices:
           <ul>
-            <li>5+ character .one names: $5 in ONE per year.</li>
-            <li>4 character .one names: $50 in ONE per year.</li>
-            <li>3 character .one names $200 in ONE per year.</li>
+            <li>5+ character .one names: $6 in ONE per year.</li>
+            <li>4 character .one names: $30 in ONE per year.</li>
+            <li>3 character .one names $120 in ONE per year.</li>
           </ul>
           3 and 4 character names have 'premium' pricing to reflect the small
           number of these names available.
