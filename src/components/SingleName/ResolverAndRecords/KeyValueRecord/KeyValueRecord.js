@@ -216,7 +216,7 @@ function Records({
   return (
     <KeyValueContainer hasRecord={hasRecord}>
       <Key>{title}</Key>
-      <KeyValuesList>
+      <KeyValuesList className="hns_value">
         {records?.map(record => {
           return (
             <Record

@@ -88,7 +88,10 @@ export default function ResolverAndRecords({
     (isOldPublicResolver || isDeprecatedResolver)
   return (
     <>
-      <ResolverWrapper needsToBeMigrated={needsToBeMigrated}>
+      <ResolverWrapper
+        className="hns_records"
+        needsToBeMigrated={needsToBeMigrated}
+      >
         {needsToBeMigrated ? (
           <>
             <ResolverMigration

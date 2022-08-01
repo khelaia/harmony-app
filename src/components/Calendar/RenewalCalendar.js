@@ -40,14 +40,14 @@ function RenewalCalendarInvite({
   // library, the Dropdown component was extend to support rendering
   // additional elements from appendChildren & prependChildren props.
   const dropDownLinks = [
-    <EmailNotifyLink
-      key="email"
-      domainName={name}
-      address={registrant}
-      onClick={handleEmailNotifyClick}
-    >
-      {t('c.email')}
-    </EmailNotifyLink>
+    // <EmailNotifyLink
+    //   key="email"
+    //   domainName={name}
+    //   address={registrant}
+    //   onClick={handleEmailNotifyClick}
+    // >
+    //   {t('c.email')}
+    // </EmailNotifyLink>
   ]
 
   return (

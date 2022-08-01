@@ -429,7 +429,11 @@ export default ({ match }) => {
             {' '}
             <div className="text-bottom-wrapper"> Twitter </div>
           </a>
-          <a target="_blank" rel="noreferrer" href="https://t.me/hnsdomains/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://t.me/harmonydomains/"
+          >
             {' '}
             <div className="text-bottom-wrapper"> Telegram </div>
           </a>
