@@ -351,7 +351,7 @@ export default ({ match }) => {
         <Nav>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/favourites">{t('c.favourites')}</NavLink>
-          <NavLink to="/about">{t('c.about')}</NavLink>
+          <NavLink to="/faq">F.A.Q</NavLink>
           {accounts?.length > 0 && !isReadOnly && (
             <NavLink
               active={url === '/address/' + accounts[0]}
@@ -386,7 +386,7 @@ export default ({ match }) => {
             Decentralized Naming For &nbsp;
             <Typewriter
               options={{
-                strings: ['WEB3!', 'USERNAMES!', 'WALLETS!', 'YOU!'],
+                strings: ['WEB3', 'USERNAMES', 'WALLETS', 'YOU'],
                 autoStart: true,
                 loop: true
               }}
@@ -421,14 +421,50 @@ export default ({ match }) => {
 
       <>
         <div className="bottom-section-wrapper">
-          <div className="text-bottom-wrapper">Twitter </div>
-
-          <div className="text-bottom-wrapper">Discord</div>
-
-          <div className="text-bottom-wrapper">Github</div>
-          <div className="text-bottom-wrapper">Docs</div>
-          <div className="text-bottom-wrapper">Roadmap</div>
-          <div className="text-bottom-wrapper">Telegram</div>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://twitter.com/HarmonyDomains/"
+          >
+            {' '}
+            <div className="text-bottom-wrapper"> Twitter </div>
+          </a>
+          <a target="_blank" rel="noreferrer" href="https://t.me/hnsdomains/">
+            {' '}
+            <div className="text-bottom-wrapper"> Telegram </div>
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://discord.gg/nX7ZdcSsNt"
+          >
+            {' '}
+            <div className="text-bottom-wrapper"> Discord </div>{' '}
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/hnsdomains/"
+          >
+            {' '}
+            <div className="text-bottom-wrapper"> Github </div>{' '}
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://docs.hnsdomains.one/"
+          >
+            {' '}
+            <div className="text-bottom-wrapper"> Docs </div>
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://hnsdomains.one/roadmap.pdf"
+          >
+            {' '}
+            <div className="text-bottom-wrapper"> Roadmap </div>
+          </a>
         </div>
       </>
     </Hero>

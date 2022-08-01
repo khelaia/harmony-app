@@ -67,12 +67,12 @@
   }
   .text-bottom-wrapper {
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 17px;
   }
   .text-bottom-wrapper::before {
     width: 65px;
-    height: 15px;
+    height: 12px;
     display: block;
-    margin-bottom: -24px;
+    margin-bottom: -21px;
   }
 }
