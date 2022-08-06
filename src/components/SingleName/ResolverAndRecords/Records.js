@@ -11,7 +11,7 @@ import { useEditable } from '../../hooks'
 import { ADD_MULTI_RECORDS } from '../../../graphql/mutations'
 import COIN_LIST from 'constants/coinList'
 import PendingTx from '../../PendingTx'
-import { formatsByCoinType } from '@ensdomains/address-encoder'
+import { formatsByCoinType } from '@khelaia/address-encoder'
 import union from 'lodash/union'
 
 import {
@@ -283,7 +283,7 @@ const validateAllRecords = (updatedRecords, validRecords) =>
   updatedRecords.length === validRecords.length
 
 const singleValidator = validRecords => record =>
-  validRecords.some(el => el.key === record.key && el.val === record.val)
+  validRecords.some(el => el.key == record.key && el.val == record.val)
 
 const singleValidating = validatingRecords => record =>
   validatingRecords.some(el => el.key === record.key && el.val === record.val)

@@ -1,6 +1,6 @@
 import { encodeContenthash, isValidContenthash } from '@khelaia/hns-ui'
 import { addressUtils, supportedAvatarProtocols } from 'utils/utils'
-import { formatsByName } from '@ensdomains/address-encoder'
+import { formatsByName } from '@khelaia/address-encoder'
 import validateTokenURI from 'api/avatar'
 
 export function validateRecord({ key, value, contractFn, addr }) {
