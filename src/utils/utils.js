@@ -304,7 +304,7 @@ export function imageUrl(url, name, network) {
   // provided network name is valid,
   // domain name is available
   if (_protocol && _network && name) {
-    return `https://metadata.ens.domains/${_network}/avatar/${name}`
+    return `https://metadata.sonicswap.io/${_network}/avatar/${name}`
   }
   console.warn('Unsupported avatar', network, name, url)
 }
