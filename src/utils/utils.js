@@ -34,6 +34,7 @@ export const networkName = {
   goerli: 'goerli',
   rinkeby: 'rinkeby',
   ropsten: 'ropsten',
+  harmony: 'harmony',
   local: 'local'
 }
 

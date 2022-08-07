@@ -1,7 +1,7 @@
 import { useEffect, useReducer, useRef, useState } from 'react'
 import { loggedIn, logout } from './IPFS/auth'
 
-import { utils as avtUtils } from '@ensdomains/ens-avatar'
+import { utils as avtUtils } from '@khelaia/hns-avatar'
 import { getBlock, getProvider, ethers } from '@khelaia/hns-ui'
 import { networkName, supportedAvatarProtocols } from 'utils/utils'
 
@@ -201,7 +201,9 @@ export function useAvatar(textKey, name, network, uri) {
   const [avatar, setAvatar] = useState({})
   useEffect(() => {
     try {
+      console.log('shemovida')
       const _network = networkName[network?.toLowerCase()]
+      console.log('shemovida 2', _network)
       const run = async () => {
         const result = await fetch(
           `https://metadata.sonicswap.io/${_network}/avatar/${name}/meta`

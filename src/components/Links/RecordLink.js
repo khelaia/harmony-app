@@ -86,6 +86,7 @@ const RecordLink = ({ textKey, value, name }) => {
     network,
     value
   )
+  console.log(imageUrl, 'image url')
   const isEmpty = isRecordEmpty(value)
 
   return url && !isEmpty ? (

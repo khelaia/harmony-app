@@ -1,4 +1,4 @@
-import { utils as avtUtils } from '@ensdomains/ens-avatar'
+import { utils as avtUtils } from '@khelaia/hns-avatar'
 import { ethers, getProvider } from '@khelaia/hns-ui'
 
 const specs = {
@@ -20,7 +20,7 @@ export default function validateTokenURI(value, _addr) {
       value
     )
     // chain id checks
-    if (chainID === 2 || chainID < 1 || chainID > 5) return false
+    // if (chainID === 2 || chainID < 1 || chainID > 5) return false
     // token/contract checks
     const spec = specs[namespace]
     if (!spec) return false
@@ -32,6 +32,7 @@ export default function validateTokenURI(value, _addr) {
       // if there is token metadata, return as valid
       try {
         const tokenURI = await spec.tokenURI(contract, tokenID)
+        console.log(tokenURI, 'token uri')
         resolve(!!tokenURI)
         return
       } catch (error) {
