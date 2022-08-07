@@ -204,7 +204,7 @@ export function useAvatar(textKey, name, network, uri) {
       const _network = networkName[network?.toLowerCase()]
       const run = async () => {
         const result = await fetch(
-          `https://metadata.ens.domains/${_network}/avatar/${name}/meta`
+          `https://metadata.sonicswap.io/${_network}/avatar/${name}/meta`
         )
         const metadata = await result.json()
         const avatarURI = avtUtils.getImageURI({ metadata })

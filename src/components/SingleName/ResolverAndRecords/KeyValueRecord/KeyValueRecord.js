@@ -162,7 +162,9 @@ function Record(props) {
   } = props
 
   const { key, value } = record
-
+  if (key === 'ONE') {
+    return <></>
+  }
   useEffect(() => {
     if (value && parseInt(value, 16) !== 0 && !hasRecord) {
       setHasRecord(true)

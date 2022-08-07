@@ -868,7 +868,3 @@ body.light-mode .video-bg:before {
   background: var(--scrollbar-bg);
   border-radius: 10px;
 }
-
-.hns_value > div:first-of-type {
-  display: none !important;
-}
